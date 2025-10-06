@@ -26,6 +26,8 @@ void create(int A[], int n)
     }
 }
 
+/*
+This is iterative method to display the data from the linked list
 void display(struct Node *p)
 {
     while (p != NULL)
@@ -34,7 +36,7 @@ void display(struct Node *p)
         p = p->Next;
     }
 }
-
+*/
 void recurDisplay(struct Node *p)
 {
     if (p != NULL)
