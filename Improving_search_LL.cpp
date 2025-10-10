@@ -188,5 +188,7 @@ int main()
     else
         std::cout << "No matching found " << std::endl;
 
+    recurDisplay(first);
+
     return 0;
 }
