@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build active file",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "file_ext=${file##*.}; if [ \"$file_ext\" = \"c\" ]; then gcc -g '${file}' -o '${fileDirname}/${fileBasenameNoExtension}'; else g++ -g '${file}' -o '${fileDirname}/${fileBasenameNoExtension}'; fi"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
