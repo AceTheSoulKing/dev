@@ -61,7 +61,7 @@ int main()
                      {0, INT_MAX, 8, 2, 3, INT_MAX, 7},
                      {0, INT_MAX, INT_MAX, INT_MAX, 2, 7, INT_MAX}};
 
-    int *distance = dijkstra(cost, 6, 3);
+    int *distance = dijkstra(cost, 6, 6);
 
     for (int i = 1; i <= 6; i++)
     {
