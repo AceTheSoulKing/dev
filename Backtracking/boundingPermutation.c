@@ -7,7 +7,7 @@ void perm(char *str, bool *sel, char *res, int n, int k)
 {
     if (k == n)
     {
-        for (int i = 0; res[i] != '\0'; i++)
+        for (int i = 0; i < n; i++)
             printf("%c", res[i]);
         printf("\n");
         return;
